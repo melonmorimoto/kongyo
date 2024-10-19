@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンギョ教会</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="header.js"></script>
+</head>
+<style>
+    /* カルーセルのスタイル */
+    .carousel {
+        position: relative;
+        max-width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-images img {
+        width: 100%;
+        height: 300px; /* 画像の高さを指定 */
+    }
+
+    /* 左右のナビゲーションボタン */
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    /* カルーセルのナビゲーションインジケータ */
+    .carousel-indicators {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .carousel-indicators span {
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: white;
+    }
+</style>
+<body>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="image1.jpg" alt="画像1">
+            <img src="image2.jpg" alt="画像2">
+            <img src="image3.jpg" alt="画像3">
+            <img src="image4.jpg" alt="画像4">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        <div class="carousel-indicators">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <main>
+        <section class="main-content">
+            <h2>最新の教会情報</h2>
+            <div class="blog">
+                <article>
+                    <h3>社会の単語</h3>
+                    <p>皆さんに渡すの忘れてました。先生が配った、プリントの単語しか出てないです。よかったら使ってね！ </p>
+                    <button onclick="location.href=location.href='study.html'">ページへ</button>
+                </article>
+                <article>
+                    <h3>漢字テスト</h3>
+                    <p>やっとできました。結構、即興で作ったんで、もしなんかあったら、お問い合せフォーム等でお知らせください。</p>
+                    <button onclick="location.href=location.href='select.html'">ページへ</button>
+                </article>
+                <article>
+                    <h3>幹部紹介</h3>
+                    <p>幹部紹介を作りました。まだ、書いていない人がいるかも知れませんが、見てください。幹部の方は早急に書いてください。kanbu.htmlです（書き方がわからない場合、文章をLINEでくれたら、打ちます）</p>
+                    <button onclick="location.href=location.href='kanbu.html'">ページへ</button>
+                </article>
+                <article>
+                    <h3>スケジュールの参加フォーム</h3>
+                    <p>中間テスト後（23日）に会員証づくりをしようと思います。来たい方はフォームの入力よろしくお願いします。</p>
+                    <a href="https://docs.google.com/forms/d/12rHibOrFNOQeeROFCGTLdTY-oMR0wUwQ828y8u3is88/edit">フォームへ</a>
+                </article>
+                <article>
+                    <h3>入会テスト</h3>
+                    <p>10/9(水)に行う予定です。（参加者1名）</p>
+                </article>
+                <article>
+                    <h3>コンギョ教会用掲示板を作りました。</h3>
+                    <p>こちらからお願いします。</p>
+                    <button onclick="location.href='https://script.google.com/a/macros/gse.okayama-c.ed.jp/s/AKfycby1FQTtqmi0tZBuLTyVjzYIuplZ-SlYyrsdmtapRCY/dev'">掲示板</button>
+                    <a href="https://docs.google.com/document/d/1sf0bK5b4YjropZ_IFxnhxFc9qZgEFyei5Dq-jqD01Ug/edit">コンギョ教会用ドキュメント</a>
+                    
+                </article>
+                <article>
+                    <h3>教徒専用サイト</h3>
+                    <p>教徒専用サイトを作りました。ユーザー名は、会員番号</p>
+                    <p>パスワードは、ブログと一緒です。（注意：自分の会員番号は、教会についての下に書かれています。書かれていない人はいってください。）</p>
+                    <button onclick="location.href=location.href='login.html'">専用ページ</button>
+                </article>
+                <article>
+                    <h3>合否確認サービス</h3>
+                    <p>合否確認サービスを作成いたしました。配られた受験用の番号を入力して合否が確認できます。</p>
+                    <p>試す場合には「87654321」を入力してください。</p>
+                    <button onclick="location.href=location.href='gouhi.html'">ページへ<button>
+                </article>
+                <article>
+                    <h3>次長's talkをはじめました。</h3>
+                    <p>ただ単に、ブログ書く機会を増やしたかっただけだと思います。まあ、カルピスのような甘酸っぱい恋をしなくても、結局は、カレーライス！𰻞𰻞麺は柿の種☆白い星は、きっと白い！（？）</p>
+                    <p>だいたい、ここにまとめるので、見てください。</p>
+                    <button onclick="location.href=location.href='jityo.html'">ページへ<button>
+                </article>
+                <article>
+                    <h3>英単語テストを作りました。。</h3>
+                    <p>もっと前につくべきでした。大変深くお詫び申し上げます。</p>
+                    <p>アプリについてどうこう言うようならば、警察の方に行っても構いません。多分、話を聞いてくれません。</p>
+                    <a href="https://script.google.com/a/macros/gse.okayama-c.ed.jp/s/AKfycbxLJ1-tU2_SnEa0eU6EbAXQev2wgMdYrkQhtMfJi-4/dev">テストへ</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="interview-form">
+            <h2>面接フォーム</h2>
+            <p>以下のQRコードをスキャンして、面接フォームにアクセスしてください。</p>
+            <a href="https://docs.google.com/forms/d/1FbyqaNLgIcBZCvxgxyanUhbFLVRmm0kMr4UQlu3arrg/edit">フォームに移動</a>
+            <img src="googleform_qr.png" alt="面接フォームQRコード" class="qr-code">
+        </section>
+
+        <section class="interview-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScG7SDeXpJbPntvFuomMs4TBmFr1dUaC12Wvz_rZiK2Q4j-rg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 コンギョ教会. All Rights Reserved.</p>
+        <button onclick="location.href='kiyaku.html'">利用規約</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

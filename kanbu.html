@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンギョ教会幹部紹介</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="header.js"></script>
+    <style>
+        .container {
+            display: flex;
+            align-items: center; /* 垂直方向の中央揃え */
+            justify-content: space-between; /* コンテンツを横に並べる */
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .text {
+            flex: 1; /* 紹介文部分の幅を広げる */
+            margin-right: 20px; /* 写真との間隔を調整 */
+        }
+        .photo {
+            width: 150px; /* 写真の幅 */
+            height: 150px; /* 写真の高さ */
+            object-fit: cover; /* 写真の縦横比を維持しながらフィット */
+        }
+    </style>
+</head>
+<body>
+
+<h1>幹部紹介</h1>
+
+<div class="container">
+    <div class="text">
+        <h2>会長：瀧川太陽</h2>
+        <p>説明文を自分で書いてください。写真も自分で張ってください。（takikawa.pngをfileの中に入れてください）</p>
+    </div>
+    <div>
+        <img src="takikawa.png" alt="瀧川太陽" class="photo">
+    </div>
+</div>
+
+<div class="container">
+    <div class="text">
+        <h2>次長：森本櫂</h2>
+        <p>次長の森本櫂です。このHPはだいたい作りました。メロンパンが好きです。（誰か買ってください）あと個人的に、最近いれいすにはまっています。</p>
+    </div>
+    <div>
+        <img src="森本だよ.png" alt="森本櫂" class="photo">
+    </div>
+</div>
+
+<div class="container">
+    <div class="text">
+        <h2>副次長：東郷華子</h2>
+        <p>説明文を自分で書いてください。写真も自分で張ってください。（togo.pngをfileの中に入れてください。）</p>
+    </div>
+    <div>
+        <img src="togo.png" alt="東郷華子" class="photo">
+    </div>
+</div>
+
+</body>
+</html>

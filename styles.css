@@ -1,0 +1,225 @@
+/* リセットCSS */
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+ 
+    .sawarabi-gothic-regular {
+        font-family: "Sawarabi Gothic", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-teachings {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.teachings {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.submenu li a {
+    color: #fff;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.main-content {
+    margin-bottom: 40px;
+}
+
+.main-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.blog article {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 20px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.blog article h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #444;
+}
+
+.blog article p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.interview-form {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.interview-form h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.interview-form p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+/* ヘッダーとメニューのスタイル */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+ext-decoration: underline;
+

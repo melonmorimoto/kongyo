@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単語当てゲーム</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #question { font-size: 20px; margin-bottom: 10px; }
+        #feedback { margin-top: 10px; color: blue; }
+    </style>
+</head>
+<body>
+    <h1>単語当てゲーム</h1>
+    <div id="question"></div>
+    <input type="text" id="answer" placeholder="答えを入力">
+    <button id="submit">送信</button>
+    <div id="feedback"></div>
+    <button onclick="location.href='index.html'">戻る</button>
+    
+    <!-- 正解・不正解の音声ファイル -->
+    <audio id="correctSound" src="mizic.mp3"></audio>
+    <audio id="incorrectSound" src="muzic2.mp3"></audio>
+    
+    <script src="study.js"></script>
+</body>
+</html>

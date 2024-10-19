@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>コンギョ教会 教徒専用サイト</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .login-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .member-content {
+      display: none;
+    }
+
+    .schedule-container {
+      margin-top: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .event {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      margin: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>コンギョ教会 教徒専用サイト</h1>
+    <nav>
+      <ul>
+        <li><a href="kongyo_kyoto.html">ホーム</a></li>
+        <li><a href="mokuhyo.html">信仰目標</a></li>
+        <li><a href="event.html">イベントのお知らせ</a></li>
+        <li><a href="board.html">掲示板</a></li>
+        <li><a href="reihai.html">礼拝の儀式</a></li>
+        <li><a href="surogan.html">スローガン</a></li>
+        <li><a href="tsuwa.html">通話アプリ</a></li>
+      </ul>
+    </nav>
+    <h2>ようこそ、教徒専用サイトへ。</h2>
+  </header>
+
+  <!-- 教徒専用コンテンツ -->
+  <div class="member-content" id="memberContent">
+    <h2>教徒専用ページ</h2>
+    <p>ここには教徒向けのコンテンツが表示されます。</p>
+    <button onclick="logout()">ログアウト</button>
+  </div>
+
+  <!-- 戻るボタン -->
+  <button onclick="location.href='index.html'">HPに戻る</button>
+
+  <script>
+    const allowedUsernames = ['A34森本', 'A19瀧川', 'A24東郷','A26中島','A11高下'];
+
+    function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (allowedUsernames.includes(username) && password === 'kongyo1934') {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('memberContent').style.display = 'block';
+      } else {
+        alert('ユーザー名またはパスワードが違います');
+      }
+    }
+
+    function logout() {
+      document.getElementById('loginForm').style.display = 'block';
+      document.getElementById('memberContent').style.display = 'none';
+    }
+  </script>
+
+  <!-- 教徒専用イベント情報 -->
+  <h1>ここでは、教徒だけの秘密のページになっています。お楽しみに。</h1>
+  <div class="schedule-container">
+    <div class="event">
+      <h3>入試に関する検討会</h3>
+      <p>日時: 10月15日 12:55 - 13:10</p>
+      <p>場所: 教会ルーム1A</p>
+      <p>入試結果や、今後について会議を行いますので、ぜひともご参加ください。</p>
+      <h5>---</h5>
+    </div>
+    <div class="event">
+      <h3>合否確認書類</h3>
+      <p>サンプルです。</p>
+      <p>明日の田口の試験で試験的に発行したいと思います。</p>
+      <iframe src="合否結果に関する書類.pdf" alt="掲載をお待ち下さい。" width="400" height="500" frameborder="0"></iframe>
+      <h5>---</h5>
+    </div>
+  </div>
+
+</body>
+</html>

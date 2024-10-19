@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="header.js"></script> <!-- ヘッダーのスクリプトを読み込み -->
+    <title>ブログ一覧</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+        }
+        .blog-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .blog-post {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .blog-post h3 {
+            margin-top: 0;
+        }
+        .blog-post p {
+            color: #555;
+        }
+        .read-more, .edit-btn {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <h2>教会のブログ</h2>
+
+    <div class="blog-container" id="blog-container">
+        <div class="blog-post">
+            <h3>タイトル:テスト勉強やばい（次長's talk） </h3>
+            <p>投稿日: 2024/10/18</p>
+            <p>今回２回目の投稿となります。次長's talkです。今日は、火曜日からある中間テストがかなりやばいと思っています。コンギョ教会で1位を取ったらゴールド会員になれるので、頑張りたいのですが、もうゴールド会員でしたw。僕の予想では、多分、鶴岡さん（ちくわ）が一位だと思います。みんながんばってください。って僕も頑張らんとだけどw。あと、中間に囚われすぎて、総合学力調査が、あることを覚えている人も少ないでしょう。なぜ、テスト2つ続けてあるんだよー（●｀ε´●）まあ勉強しないといけないね。今日も、呼吸をするように勉強 by板野 以上次長's talkでした。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+        </div> 
+        <div class="blog-post">
+            <h3>タイトル:布教が本格化 </h3>
+            <p>投稿日: 2024/10/18</p>
+            <p>コンギョ教会が始まってから一週間以上が経過した今、教徒は9人を突破しました。我々幹部の目標は15人であります。教徒の皆さん、積極的に周りの人への布教（洗脳）を進めていきましょう。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル:最近（次長's talk） </h3>
+            <p>投稿日: 2024/10/17</p>
+            <p>暇なときに次長's talkは書こうと思います。今日は、最近、なんか聞かないといけない曲が増えてきたなと感じております。席替えしてからかわかりませんが、周りの勢いが激しすぎて、ついていけてないです。今書いている自分も何を書いているかわかりません。（ホームの伏線回収（笑））とりあえず、驚いたのは、みずきと誕生日が一緒でした。8月27日です。いれいすは、誕生日、冬が多いよね。オタクみたいなこと行ってすいません。（オタクじゃないよ）まあ、人間生きることは、生きることにつながるので、生きているだけで、生きているという小泉があるように、生きているから、生きていると実感する。勉強をするから、学ぶことができる。結局のところは、水原一平は、すごい人 以上次長's talkでした。今日も、曲聴きながらテス勉します。（今日はニーゴかな）</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+        </div> 
+    <div class="blog-post">
+        <h3>タイトル:新メンバー加入part3</h3>
+        <p>投稿日: 2024/10/17</p>
+        <p>今日、コンギョ教会に新メンバーとして、山根美波さんと南堀ゆいさんが加入しました。山根さんはピアノが弾けるため、教歌歌唱の時の伴奏は彼女が務めてくれるでしょう。南堀さんは幅広い人脈を持っているため、布教活動を積極的に行ってくれるでしょう。以上インフォメーションでした。</p>
+        <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+        <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+    </div> 
+            <div class="blog-post">
+            <h3>タイトル:キム様、新政策を発表｛デマ｝</h3>
+            <p>投稿日: 2024/10/17</p>
+            <p>北朝鮮、独自の「カラオケアプリ」を開発！
+
+                北朝鮮政府が、国民のエンターテインメントを充実させるために、完全に独自のカラオケアプリ「金日成カラオケ」を発表した。このアプリは、国民が好きな歌を選び、歌った内容をAIが即座に採点するというもの。採点の基準は、「人民の心に響く」歌唱力だそうで、歌詞には必ず金日成氏と金正恩氏への賛美が含まれる必要がある。 さらに、このアプリには「革命的ボーナス」機能があり、他のユーザーと競い合ってスコアを競うことができる。上位入賞者には「人民の模範」として特別表彰され、政府から特別な食料配給を受けられるという。
+                 アプリの開発者は「このアプリで、国民が楽しく歌い、団結力を高めることができる」とコメントしている。しかし、試用版を使ったユーザーの中には「歌が下手だと、突然監視員に囲まれる」との不安の声も上がっているとか。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+            </div>
+        <div class="blog-post">
+            <h3>タイトル:北朝鮮、韓国へとつながる道と鉄道を爆破</h3>
+            <p>投稿日: 2024/10/17</p>
+            <p>　韓国軍は、北朝鮮が15日に韓国とつながる道路の北朝鮮側の一部区間を爆破した、と発表した。北朝鮮は韓国が平壌上空に無人機を侵入させたとも主張し、南北の軍事境界線付近の部隊に射撃準備の態勢を整えるよう指示するなど、緊張が高まっている。韓国軍によると、爆破されたのは朝鮮半島の東部と西部を走る道路で、軍事境界線のすぐ北側。東部では鉄路の一部も爆破されたという。韓国軍は軍事境界線の南側の地域で対抗のための射撃を実施し、警戒・監視態勢を強化した。北朝鮮は金正恩（キムジョンウン）総書記が昨年末以降、韓国を「敵対国」と位置づけて対決姿勢を強めており、今月9日に韓国とつながる道路や鉄道を完全に遮断すると表明。「要塞（ようさい）化」のための工事を始めると宣言していた。
+                
+                </p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+            </div>
+        <div class="blog-post">
+            <h3>タイトル:結果速報</h3>
+            <p>投稿日: 2024/10/16</p>
+            <p>田口さんの「筆記」の点数をお知らせします。筆記...24点　これからも精進してください</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+            </div>
+        <div class="blog-post">
+            <h3>タイトル:【急募】長大翔を貶めるためのテスト作成の要員募集</h3>
+            <p>投稿日: 2024/10/15</p>
+            <p>来週、長大翔を教会長の自己満のため、陥れるためのテストを作成いたします。動機は「明後日の予定まだ貼ってないやん。俺がした方が早いやん。」と煽られ、腹が立ったためです。どうぞご協力賜れますようご協力お願い申し上げます。ちなみに、長には普通に大学入試レベルの問題を出してもらって構いません。苦しんでいる姿をみたいだけです。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル:今日、初の入会テストが行われる。</h3>
+            <p>投稿日: 2024/10/15</p>
+            <p>今日、初の入会テストが行われました。一次は、中止に終わった入会テストでしたが、匿名Tさんも復活をし、行うことができました。問題を解いている際、匿名Tさんは、「何この問題難しすぎるやろ、明日に、できますかね。もう少し考えたい」とわかりそうな人のことを言っていましたが、彼は何もわかっていませんでした。これを受け、次長・森本櫂は「早く彼には、教会に入ってほしい。いつまで待たせるのか」と語っております。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+        </div> 
+        <div class="blog-post">
+            <h3>タイトル:新メンバー加入part2</h3>
+            <p>投稿日: 2024/10/15</p>
+            <p>今日、コンギョ教会に新メンバーとして、鶴岡里奈さんが加入しました。多分、前回お知らせした。中間でのゴールド会員昇格は彼女が取るでしょう。以上インフォメーションでした。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+        </div> 
+        <div class="blog-post">
+            <h3>タイトル:中間テストについてのお知らせ（インフォメーション）</h3>
+            <p>投稿日: 2024/10/13</p>
+            <p>中間テストについてのお知らせです。教会長と次長で話し合った結果、10月22日から行われる岡山操山中学校二学期中間考査で、教会内で、最も優秀な成績を残した方には、ゴールド会員に昇格します。皆さん、気合い入れてがんばってください以上インフォメーションでした。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+         </div> 
+        <div class="blog-post">
+            <h3>タイトル: 通話機能の実装に成功しました！（開発チーム）</h3>
+            <p>投稿日: 2024/10/11</p>
+            <p>本日、通話機能の実装に成功しました。森本様に深く感謝申し上げます。（特に話さず、チャットで会話だけしていたのは他言してはなりません。）。以上インフォメーションからでした。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+            </div>
+        <div class="blog-post">
+            <h3>タイトル: 合否通知書・合否確認サービス始動（インフォメーション）</h3>
+            <p>投稿日: 2024/10/10</p>
+            <p>本日。合否通知書・合否確認サービスが始動しました。おそらく匿名Tは不合格通知書が来ることだろう。それは彼の普段の行動がそういっているようなものだ。以上インフォメーションでした。</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+            </div>
+        <div class="blog-post">
+            <h3>タイトル: 新メンバー加入</h3>
+            <p>投稿日: 2024/10/10</p>
+            <p>本日、中島彩花さんがコンギョ教会の新たな一員となった。心より感謝する。...</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+            </div>
+        <div class="blog-post">
+            <h3>タイトル: 匿名T、入試に挑む</h3>
+            <p>投稿日: 2024/10/8</p>
+            <p>落ちる可能性が高いと見られる。彼は、受かることができないだろう。...</p>
+            <a href="#" class="read-more" onclick="viewBlog(1)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(1)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: 瀧川、学級委員に就任、他1名も委員会に就任</h3>
+            <p>投稿日: 2024/10/8</p>
+            <p>コンギョ教会の会長、瀧川太陽が、学級委員に立候補しました。倍率は、1/2だったのに対し、1A学級委員に就任しました。その他に、次長の森本櫂が、信任投票により、1A交通委員に就任しました。これからの、活躍に期待です。</p>
+            <a href="#" class="read-more" onclick="viewBlog(2)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(2)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: コンギョ教会のブログ投稿機能を追加</h3>
+            <p>投稿日: 2024/10/8</p>
+            <p>コンギョ教会のHPである、このページのブログ一覧と、ブログ投稿機能を追加しました。パスワードは教徒のみに教えられています。一般の方は、ブログの投稿はできないようになっているので、ご了承ください。...</p>
+            <a href="#" class="read-more" onclick="viewBlog(3)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(3)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: 修正の設定を実装(インフォメーション)</h3>
+            <p>投稿日: 2024/10/8</p>
+            <p>修正の設定の実装をしました。今後とも、コンギョ教会をよろしくお願いします。以上インフォメーションでした。</p>
+            <a href="#" class="read-more" onclick="viewBlog(4)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(4)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: 初の入会テスト、中止に終わる。</h3>
+            <p>投稿日: 2024/10/8</p>
+            <p>コンギョ教会設立後、はじめての入会テストが今日行われる予定でしたが、受験者が先生へ呼び出しを食らわされ、今回は、中止となりました。 受験者のTさんは、先生に呼ばれる前。「終わった。まじで、食欲ない。どうしよ、」とずっとつぶやきながら、昼食を取っていました。彼は、自分が悪いと容疑を認めている。これを受け、次長、森本櫂は、「自分がしたことなので、しっかりと反省して、次のテストにのぞんでほしい」という言葉をいただきました。</p>
+            <a href="#" class="read-more" onclick="viewBlog(5)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(5)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: 入会テストの過去問作成(インフォメーション)</h3>
+            <p>投稿日: 2024/10/9</p>
+            <p>入会テストの過去問を作りました。合格ラインなどが見れるので、見てみてください。以上、インフォメーションでした。...</p>
+            <a href="#" class="read-more" onclick="viewBlog(6)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(6)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: コンギョ教会用の掲示板を作りました。(インフォメーション)</h3>
+            <p>投稿日: 2024/10/9</p>
+            <p>コンギョ教会の掲示板を作りました。ホームに乗せるので、ぜひ、つかってみてください。以上、インフォメーションでした。追記：森本は9時からラインが使えないので、これでお願いします。...</p>
+            <a href="#" class="read-more" onclick="viewBlog(7)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(7)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: ブログ機能についてのお知らせ</h3>
+            <p>投稿日: 2024/10/9</p>
+            <p>ブログ機能について、他端末で表示されないという、情報が入りました。今は検討中です。これからも、コンギョ教会をよろしくお願いします。...</p>
+            <a href="#" class="read-more" onclick="viewBlog(8)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(8)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: 利用規約を書きました。（インフォメーション）</h3>
+            <p>投稿日: 2024/10/9</p>
+            <p>利用規約を書きました。下にある利用規約をクリックしていただくと開けますので、よく読んで、規約違反にならないようにしてください。以上インフォメーションでした。</p>
+            <a href="#" class="read-more" onclick="viewBlog(9)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(9)">修正する</a>
+        </div>
+        <div class="blog-post">
+            <h3>タイトル: 教徒専用ページを作りました。（インフォメーション）</h3>
+            <p>投稿日: 2024/10/10</p>
+            <p>教徒専用サイトを作りましたので、是非ご覧になってください。（ホームの最新情報を参考に、ログインしてください）以上インフォメーションでした。</p>
+            <a href="#" class="read-more" onclick="viewBlog(9)">続きを読む</a>
+            <a href="#" class="edit-btn" onclick="editBlog(9)">修正する</a>
+        </div>
+    </div>
+
+    <script>
+        
+
+        // 詳細ページに移動
+        function viewBlog(index) {
+            window.location.href = `blog_detail.html?index=${index}`;
+        }
+
+        // 修正ページに移動
+        function editBlog(index) {
+            window.location.href = `blog_post.html?index=${index}`;
+        }
+    </script>
+   <footer>
+    <p>&copy; 2024 コンギョ教会. All Rights Reserved.</p>
+    <button onclick="location.href='kiyaku.html'">利用規約</button>
+</footer>
+
+</body>
+</html>

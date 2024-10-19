@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンギョ教会専用通話アプリ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://meet.jit.si/external_api.js'></script>
+  </head>
+  <style>
+    h1{
+      text-align: center;
+      font-family: serif;
+    }
+  </style>
+  <body>
+    <header>
+    <h1>コンギョ教会専用ビデオ通話アプリ</h1>
+    <nav>
+      <ul>
+        <li><a href="kongyo_kyoto.html">ホーム</a></li>
+            <li><a href="mokuhyo.html">信仰目標</a></li>
+            <li><a href="event.html">イベントのお知らせ</a></li>
+            <li><a href="board.html">掲示板</a></li>
+            <li><a href="reihai.html">礼拝の儀式</a></li>
+            <li><a href="surogan.html">スローガン</a></li>
+            <li><a href="tsuwa.html">通話アプリ</a></li> 
+      </ul>
+    </nav>
+    </header>
+    <div align="center">
+      <button onclick="location.href='index.html'">HPに戻る</button>
+    </div>
+    <div id="meet" align="center"></div>
+    
+    <script>
+      const domain = 'meet.jit.si';
+      const options = {
+        roomName: 'kongyo1934',
+        width: 700,
+        height: 500,
+        parentNode: document.querySelector('#meet'),
+        configOverwrite: { startWithAudioMuted: true },
+        interfaceConfigOverwrite: { filmStripOnly: false }
+      };
+      const api = new JitsiMeetExternalAPI(domain, options);
+
+      // 他の操作例: ミュートやビデオの制御
+      api.addEventListener('participantJoined', () => {
+        console.log('参加者が入室しました');
+      });
+    </script>
+  </body>
+</html>

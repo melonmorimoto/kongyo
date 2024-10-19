@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>合否確認サービス</title>
+  <script defer src="sukuriputo.js"></script> <!-- JSファイルを読み込む -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="header.js"></script>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+  h1{
+    font-family:serif ;
+  }
+  input{
+    width: 70%;
+    height: 70;
+    font-size: 120%;
+  }
+</style>
+<body>
+  <h1>合否確認サービス</h1>
+  
+  <!-- 番号入力用のフォーム -->
+  <label for="numberInput">8桁の番号を入力してください:</label>
+  <input type="text" id="numberInput" maxlength="8" placeholder="番号を入力">
+  <button id="submitButton">検索</button>
+  <p><a href="index.html">ホームに戻る</a></p>
+  
+  <!-- メッセージ表示用のエリア -->
+  <p id="messageArea"></p>
+</body>
+</html>
+
